@@ -205,11 +205,11 @@ const partenaires = [
       {/* ── PRÉSENTATION PLATEFORME ── */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl w-[90vw] mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className=" mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
               Votre parcours vers l'excellence sportive
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className=" text-gray-600 max-w-3xl mx-auto">
               GalléWork Sport vous accompagne dans votre développement
               professionnel avec des formations de qualité.
             </p>
@@ -223,11 +223,11 @@ const partenaires = [
               { icon: '🔍', color: 'bg-purple-100', iconColor: 'text-purple-600', title: 'Découvrir',
                 desc: 'Explorez les opportunités de carrière et les dernières tendances du secteur.' }
             ].map(card => (
-              <div key={card.title} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center">
-                <div className={`w-16 h-16 ${card.color} rounded-full flex items-center justify-center mx-auto mb-6`}>
-                  <span className="text-2xl">{card.icon}</span>
+              <div key={card.title} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                <div className={`w-16 h-16 ${card.color} rounded-full flex items-center justify-center mb-6`}>
+                  <span className="">{card.icon}</span>
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">{card.title}</h3>
+                <h3 className=" font-semibold text-gray-900 mb-4">{card.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{card.desc}</p>
               </div>
             ))}
@@ -237,13 +237,13 @@ const partenaires = [
 
       {/* ── FORMATIONS POPULAIRES ── */}
       <section className="py-20">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl w-[90vw] mx-auto px-6">
           <div className="flex flex-wrap justify-between items-end mb-12 gap-4">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-2">Formations populaires</h2>
-              <p className="text-xl text-gray-600">Découvrez nos cours les plus appréciés</p>
+              <p className=" text-gray-600">Découvrez nos cours les plus appréciés</p>
             </div>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors">
+            <button className="text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors">
               Voir toutes les formations
             </button>
           </div>
@@ -267,7 +267,7 @@ const partenaires = [
                       {f.price}
                     </span>
                   </div>
-                  <button className="w-full bg-blue-600 text-white py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">
+                  <button className=" text-blue-600 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">
                     Voir plus
                   </button>
                 </div>
@@ -280,20 +280,25 @@ const partenaires = [
       {/* ── WEBINAIRES ── */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl w-[90vw] mx-auto px-6">
-          <div className="text-center mb-12">
+        <div className="flex justify-between items-center">
+          <div className="mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Webinaires à venir</h2>
-            <p className="text-xl text-gray-600">Ne manquez pas nos prochains événements exclusifs</p>
+            <p className=" text-gray-600">Ne manquez pas nos prochains événements exclusifs</p>
           </div>
+          <button className="text-blue-600 font-medium hover:underline">
+              Voir tous les webinaires →
+            </button>
+            </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {webinaires.map(w => (
               <div key={w.id} className="bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow border border-gray-100">
                 <div className="flex items-center gap-2 text-blue-600 mb-3">
-                  <span>📅</span>
+    
                   <span className="text-sm font-medium">{w.date} • {w.time}</span>
                 </div>
                 <h3 className="font-semibold text-gray-900 text-lg mb-2">{w.title}</h3>
                 <div className="flex items-center gap-2 text-gray-500 mb-5">
-                  <span>👤</span>
+               
                   <span className="text-sm">Par {w.speaker}</span>
                 </div>
                 <button className="w-full bg-blue-600 text-white py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">
@@ -302,21 +307,22 @@ const partenaires = [
               </div>
             ))}
           </div>
-          <div className="text-center">
-            <button className="text-blue-600 font-medium hover:underline">
-              Voir tous les webinaires →
-            </button>
-          </div>
+        
         </div>
       </section>
 
       {/* ── ACTUALITÉS ── */}
       <section className="py-20">
         <div className="max-w-7xl w-[90vw] mx-auto px-6">
-          <div className="text-center mb-12">
+        <div className="flex justify-between items-center">
+          <div className="mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Actualités récentes</h2>
-            <p className="text-xl text-gray-600">Restez informé des dernières tendances</p>
+            <p className=" text-gray-600">Restez informé des dernières tendances</p>
           </div>
+          <button className="text-blue-600 font-medium hover:underline">
+              Lire plus d'actualités →
+            </button>
+            </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {actualites.map(a => (
               <div key={a.id} className="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
@@ -331,11 +337,6 @@ const partenaires = [
                 </div>
               </div>
             ))}
-          </div>
-          <div className="text-center">
-            <button className="text-blue-600 font-medium hover:underline">
-              Lire plus d'actualités →
-            </button>
           </div>
         </div>
       </section>
@@ -363,7 +364,7 @@ const partenaires = [
             </button>
           </div>
           <div className="flex justify-center gap-6 text-2xl">
-            {['📘','🐦','💼','📸','▶️'].map((icon, i) => (
+            {[].map((icon, i) => (
               <button key={i} className="text-blue-200 hover:text-white transition-colors">{icon}</button>
             ))}
           </div>
