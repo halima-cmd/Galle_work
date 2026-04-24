@@ -125,7 +125,7 @@ const partenaires = [
           {/* Actions */}
           <div className="hidden md:flex items-center gap-3">
             <button className="text-gray-700 hover:text-blue-600 font-medium px-3 py-2 transition-colors">
-              🌐 FR
+            FR
             </button>
             <button className="text-gray-700 hover:text-blue-600 font-medium px-4 py-2 transition-colors">
               Connexion
@@ -216,11 +216,11 @@ const partenaires = [
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {[
-              { icon: '📚', color: 'bg-blue-100', iconColor: 'text-blue-600', title: 'Se former',
+              { icon: '', color: 'bg-blue-100', iconColor: 'text-blue-600', title: 'Se former',
                 desc: 'Accédez à des formations certifiantes conçues par des experts du sport et de leSport.' },
-              { icon: '📅', color: 'bg-green-100', iconColor: 'text-green-600', title: 'Participer',
+              { icon: '', color: 'bg-green-100', iconColor: 'text-green-600', title: 'Participer',
                 desc: 'Rejoignez nos webinaires exclusifs et événements networking avec des professionnels.' },
-              { icon: '🔍', color: 'bg-purple-100', iconColor: 'text-purple-600', title: 'Découvrir',
+              { icon: '', color: 'bg-purple-100', iconColor: 'text-purple-600', title: 'Découvrir',
                 desc: 'Explorez les opportunités de carrière et les dernières tendances du secteur.' }
             ].map(card => (
               <div key={card.title} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
