@@ -23,7 +23,7 @@ export default function Partenaires() {
           <div className="flex gap-10 animate-scroll">
 
             {/* duplication pour boucle infinie */}
-            {[...partenaires, ...partenaires].map(p => (
+            {[...partenaires, ...partenaires, ...partenaires].map(p => (
               <div
                 key={p.id + Math.random()}
                 className="flex items-center justify-center min-w-[120px] h-20 bg-white rounded-xl border border-gray-100 px-6"
