@@ -105,9 +105,9 @@ h2 {
     font-size: 20px;
   }
 }
-p {
+/* p {
   margin: 0;
-}
+} */
 
 code,
 .counter {
@@ -122,4 +122,19 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
 }
