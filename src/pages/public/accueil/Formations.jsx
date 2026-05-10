@@ -70,7 +70,7 @@ export default function Formations() {
               Formations populaires
             </h2>
 
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-sm">
               Découvrez nos cours les plus appréciés
             </p>
           </div>

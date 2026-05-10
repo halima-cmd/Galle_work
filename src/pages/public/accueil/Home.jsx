@@ -139,12 +139,12 @@ export default function Home() {
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">
                   Votre parcours vers l'excellence sportive
                 </h2>
-                <p className=" text-gray-600 max-w-2xl">
+                <p className=" text-gray-600 max-w-md text-sm">
                   GalléWork Sport vous accompagne dans votre développement
                   professionnel avec des formations de qualité.
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ">
                 {[
                   { icon: '', color: '', iconColor: 'text-blue-600', title: 'Se former',
                     desc: 'Accédez à des formations certifiantes conçues par des experts du sport et de leSport.' },
@@ -158,7 +158,7 @@ export default function Home() {
                       <span className="">{card.icon}</span>
                     </div> */}
                     <h3 className=" font-semibold text-gray-900 mb-4">{card.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{card.desc}</p>
+                    <p className="text-gray-600 leading-relaxed text-sm">{card.desc}</p>
                   </div>
                 ))}
               </div>
@@ -170,7 +170,7 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <div className="mb-12">
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">Nos Formateurs</h2>
-                <p className=" text-gray-600">Restez informé des dernières tendances</p>
+                <p className=" text-gray-600 text-sm">Restez informé des dernières tendances</p>
               </div>
       
                 </div>
@@ -200,7 +200,7 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <div className="mb-12">
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">Webinaires à venir</h2>
-                <p className=" text-gray-600">Ne manquez pas nos prochains événements exclusifs</p>
+                <p className=" text-gray-600 text-sm">Ne manquez pas nos prochains événements exclusifs</p>
               </div>
               <button className="text-blue-600 font-medium hover:underline">
                   Voir tous les webinaires →
@@ -234,9 +234,9 @@ export default function Home() {
             <div className="flex justify-between items-center">
               <div className="mb-12">
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">Actualités récentes</h2>
-                <p className=" text-gray-600">Restez informé des dernières tendances</p>
+                <p className=" text-gray-600 text-sm">Restez informé des dernières tendances</p>
               </div>
-              <button className="text-blue-600 font-medium hover:underline">
+              <button className="text-blue-600 font-medium hover:underline text-sm">
                   Lire plus d'actualités →
                 </button>
                 </div>
@@ -265,7 +265,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold text-white mb-4">
                 Restez connecté avec GalléWork Sport
               </h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-sm text-blue-100 mb-8">
                 Recevez nos dernières formations et actualités directement dans votre boîte mail
               </p>
               <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto mb-8">
