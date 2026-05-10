@@ -3,6 +3,8 @@ import { useState } from 'react'
 import Partenaires from './Partenaires'
 import heroImage from '../../../assets/images/hero.png'
 import Formations from './Formations'
+import mehdi from '../../../assets/images/mehdi.jpeg'
+import diop from '../../../assets/images/diop.jpeg'
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 // import './App.css'
 
@@ -56,6 +58,34 @@ const actualites = [
   }
 ]
 
+const formateurs = [
+  {
+    id: 1,
+    title: "Maître Mooti Dakhli ",
+    excerpt: "Expert en droit du Sport",
+    image: mehdi
+  },
+  {
+    id: 2,
+    title: "Ibrahim Diop",
+    excerpt: "Expert en analyse vidéo Analyste vidéo de l'équipe nationale du Burkina Faso.",
+    image: diop
+  },
+  {
+    id: 3,
+    title: "Maître Mooti Dakhli",
+    excerpt: "Expert en analyse vidéo Analyste vidéo de l'équipe nationale du Burkina Faso",
+    image: mehdi
+  },
+
+  {
+    id: 3,
+    title: "Ibrahim Diop",
+    excerpt: "Expert en analyse vidéo Analyste vidéo de l'équipe nationale du Burkina Faso.",
+    image: diop
+  },
+]
+
 
 export default function Home() {
 
@@ -103,9 +133,9 @@ export default function Home() {
           <Partenaires />
     
           {/* ── PRÉSENTATION PLATEFORME ── */}
-          <section className="py-20 bg-gray-50">
+          <section className="py-16 bg-gray-50">
             <div className="max-w-7xl w-[90vw] mx-auto px-6">
-              <div className=" mb-16">
+              <div className=" mb-9">
                 <h2 className="text-4xl font-bold text-gray-900 mb-4">
                   Votre parcours vers l'excellence sportive
                 </h2>
@@ -116,17 +146,17 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                 {[
-                  { icon: '', color: 'bg-blue-100', iconColor: 'text-blue-600', title: 'Se former',
+                  { icon: '', color: '', iconColor: 'text-blue-600', title: 'Se former',
                     desc: 'Accédez à des formations certifiantes conçues par des experts du sport et de leSport.' },
-                  { icon: '', color: 'bg-green-100', iconColor: 'text-green-600', title: 'Participer',
+                  { icon: '', color: '', iconColor: 'text-green-600', title: 'Participer',
                     desc: 'Rejoignez nos webinaires exclusifs et événements networking avec des professionnels.' },
-                  { icon: '', color: 'bg-purple-100', iconColor: 'text-purple-600', title: 'Découvrir',
+                  { icon: '', color: '', iconColor: 'text-purple-600', title: 'Découvrir',
                     desc: 'Explorez les opportunités de carrière et les dernières tendances du secteur.' }
                 ].map(card => (
                   <div key={card.title} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                    <div className={`w-16 h-16 ${card.color} rounded-full flex items-center justify-center mb-6`}>
+                    {/* <div className={`w-16 h-16 ${card.color} rounded-full flex items-center justify-center mb-6`}>
                       <span className="">{card.icon}</span>
-                    </div>
+                    </div> */}
                     <h3 className=" font-semibold text-gray-900 mb-4">{card.title}</h3>
                     <p className="text-gray-600 leading-relaxed">{card.desc}</p>
                   </div>
@@ -135,11 +165,37 @@ export default function Home() {
             </div>
           </section>
     
+          <section className="py-16">
+            <div className="max-w-7xl w-[90vw] mx-auto px-6">
+            <div className="flex justify-between items-center">
+              <div className="mb-12">
+                <h2 className="text-4xl font-bold text-gray-900 mb-4">Nos Formateurs</h2>
+                <p className=" text-gray-600">Restez informé des dernières tendances</p>
+              </div>
+      
+                </div>
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                {formateurs.map(a => (
+                  <div key={a.id} className="bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+                    <img src={a.image} alt={a.title} className="w-full h-48 object-cover" />
+                    <div className="p-6">
+                      <p className="text-sm text-gray-400 mb-2">{a.date}</p>
+                      <h3 className="font-semibold text-gray-900 mb-3 line-clamp-2">{a.title}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">{a.excerpt}</p>
+                 
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+
           {/* ── FORMATIONS POPULAIRES ── */}
         <Formations/>
     
           {/* ── WEBINAIRES ── */}
-          <section className="py-20 bg-gray-50">
+          <section className="py-16 bg-gray-50">
             <div className="max-w-7xl w-[90vw] mx-auto px-6">
             <div className="flex justify-between items-center">
               <div className="mb-12">

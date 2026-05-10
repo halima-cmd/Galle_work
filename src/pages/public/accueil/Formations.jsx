@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 export default function Formations() {
@@ -42,14 +43,14 @@ export default function Formations() {
       ]
 
   return (
-    <section className="py-20">
+    <section className="py-9">
     <div className="max-w-7xl w-[90vw] mx-auto px-6">
       <div className="flex flex-wrap justify-between items-end mb-12 gap-4">
         <div>
           <h2 className="text-4xl font-bold text-gray-900 mb-2">Formations populaires</h2>
           <p className=" text-gray-600">Découvrez nos cours les plus appréciés</p>
         </div>
-        <button className="text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-700 transition-colors">
+        <button className="text-blue-600 px-6 py-2 rounded-full font-medium hover:underline transition-colors">
           Voir toutes les formations
         </button>
       </div>
@@ -73,7 +74,7 @@ export default function Formations() {
                   {f.price}
                 </span>
               </div>
-              <button className=" text-blue-600 py-2 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors">
+              <button className=" text-blue-600 py-2 rounded-full text-sm font-medium hover:underline transition-colors">
                 Voir plus
               </button>
             </div>
