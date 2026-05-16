@@ -1,10 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Partenaires from './Partenaires'
 import heroImage from '../../../assets/images/hero.png'
-import Formations from './Formations'
+import Formations from './formations/Formations'
 import mehdi from '../../../assets/images/mehdi.jpeg'
 import diop from '../../../assets/images/diop.jpeg'
+import Actualites from './actualites/Actualites'
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 // import './App.css'
 
@@ -34,29 +36,29 @@ const webinaires = [
   }
 ]
 
-const actualites = [
-  {
-    id: 1,
-    title: "Les Métiers Émergents du Sport Digital",
-    excerpt: "Découvrez les nouvelles opportunités professionnelles dans l'industrie du sport numérique.",
-    date: "20 Avril 2026",
-    image: "https://images.unsplash.com/photo-1434596922112-19c563067271?w=400&h=250&fit=crop"
-  },
-  {
-    id: 2,
-    title: "eSport : Un Secteur en Pleine Expansion",
-    excerpt: "Analyse du marché de l'eSport et des compétences recherchées par les recruteurs du secteur.",
-    date: "18 Avril 2026",
-    image: "https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=400&h=250&fit=crop"
-  },
-  {
-    id: 3,
-    title: "Formation Continue : Clé du Succès Sportif",
-    excerpt: "L'importance de la formation continue pour les professionnels du sport.",
-    date: "15 Avril 2026",
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop"
-  }
-]
+// const actualites = [
+//   {
+//     id: 1,
+//     title: "Les Métiers Émergents du Sport Digital",
+//     excerpt: "Découvrez les nouvelles opportunités professionnelles dans l'industrie du sport numérique.",
+//     date: "20 Avril 2026",
+//     image: "https://images.unsplash.com/photo-1434596922112-19c563067271?w=400&h=250&fit=crop"
+//   },
+//   {
+//     id: 2,
+//     title: "eSport : Un Secteur en Pleine Expansion",
+//     excerpt: "Analyse du marché de l'eSport et des compétences recherchées par les recruteurs du secteur.",
+//     date: "18 Avril 2026",
+//     image: "https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=400&h=250&fit=crop"
+//   },
+//   {
+//     id: 3,
+//     title: "Formation Continue : Clé du Succès Sportif",
+//     excerpt: "L'importance de la formation continue pour les professionnels du sport.",
+//     date: "15 Avril 2026",
+//     image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop"
+//   }
+// ]
 
 const formateurs = [
   {
@@ -165,6 +167,8 @@ export default function Home() {
             </div>
           </section>
     
+       {/* ── FORMATIONS POPULAIRES ── */}
+       <Formations/>
           <section className="py-16">
             <div className="max-w-7xl w-[90vw] mx-auto px-6">
             <div className="flex justify-between items-center">
@@ -191,8 +195,7 @@ export default function Home() {
           </section>
 
 
-          {/* ── FORMATIONS POPULAIRES ── */}
-        <Formations/>
+       
     
           {/* ── WEBINAIRES ── */}
           <section className="py-16 bg-gray-50">
@@ -229,7 +232,8 @@ export default function Home() {
           </section>
     
           {/* ── ACTUALITÉS ── */}
-          <section className="py-20">
+          <Actualites />
+          {/* <section className="py-20">
             <div className="max-w-7xl w-[90vw] mx-auto px-6">
             <div className="flex justify-between items-center">
               <div className="mb-12">
@@ -248,21 +252,24 @@ export default function Home() {
                       <p className="text-sm text-gray-400 mb-2">{a.date}</p>
                       <h3 className="font-semibold text-gray-900 mb-3 line-clamp-2">{a.title}</h3>
                       <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-3">{a.excerpt}</p>
-                      <button className="text-blue-600 text-sm font-medium hover:underline">
-                        Lire l'article →
-                      </button>
+                                        <Link
+                    to={`/actualites/${a.id}`}
+                    className="text-blue-600 text-sm font-medium hover:underline"
+                  >
+                    Lire l'article →
+                  </Link>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-          </section>
+          </section> */}
     
     
           {/* ── NEWSLETTER ── */}
           <section className="py-20 bg-blue-600">
             <div className="max-w-4xl w-[90vw] mx-auto px-6 text-center">
-              <h2 className="text-4xl font-bold text-white mb-4">
+              <h2 className="text-4xl font-bold flex justify-center text-center text-white mb-4">
                 Restez connecté avec GalléWork Sport
               </h2>
               <p className="text-sm text-blue-100 mb-8">
