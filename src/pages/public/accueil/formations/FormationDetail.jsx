@@ -478,14 +478,14 @@ export default function FormationDetail() {
             </section>
 
             {/* FAQ */}
-            <section>
+            {/* <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Questions fréquentes</h2>
               <div className="space-y-3">
                 {formation.faq.map((item, i) => (
                   <FaqItem key={i} item={item} />
                 ))}
               </div>
-            </section>
+            </section> */}
 
           </div>
 

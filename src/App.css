@@ -181,6 +181,18 @@
     right: 0;
     border-right-color: var(--border);
   }
+
+input{
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: #ffffff !important;
+    height: 2px !important;
+    /* opacity: 1; */
+}
 }
 
 
