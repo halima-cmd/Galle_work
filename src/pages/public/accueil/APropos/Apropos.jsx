@@ -74,8 +74,16 @@ export default function APropos() {
   return (
     <div className="min-h-screen bg-white">
 
-      {/* ── HERO ── */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 py-20 px-20">
+      <section className=" py-20 px-20"
+       style={{ background: 'linear-gradient(145deg, #0a1628 0%, #0d2045 50%, #0a1e5e 100%)' }}>
+
+<div className="absolute top-[-80px] left-[-80px] w-80 h-80 rounded-full opacity-10"
+          style={{ background: 'radial-gradient(circle, #3b82f6, transparent)' }} />
+        <div className="absolute bottom-[-60px] right-[-60px] w-96 h-96 rounded-full opacity-10"
+          style={{ background: 'radial-gradient(circle, #1d4ed8, transparent)' }} />
+        <div className="absolute bottom-40 left-[-40px] w-60 h-60 rounded-full opacity-5"
+          style={{ background: 'radial-gradient(circle, #60a5fa, transparent)' }} />
+
         <div className="max-w-7xl w-[90vw] mx-auto  text-white">
           {/* <span className="inline-block bg-white/20 text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
             Notre histoire
@@ -170,19 +178,19 @@ export default function APropos() {
             <span className="text-blue-600 text-sm font-semibold uppercase tracking-wider">Notre parcours</span>
             <h2 className="text-3xl font-bold text-gray-900 mt-2">Notre histoire</h2>
           </div>
-          <div className="relative">
-            {/* Ligne verticale */}
+          {/* <div className="relative">
+        
             <div className="absolute left-16 top-0 bottom-0 w-0.5 bg-blue-100" />
             <div className="space-y-8">
               {etapes.map((e, i) => (
                 <div key={i} className="flex gap-6 items-start relative">
-                  {/* Année */}
+                
                   <div className="w-12 text-right flex-shrink-0">
                     <span className="text-xs font-bold text-blue-600">{e.year}</span>
                   </div>
-                  {/* Point */}
+            
                   <div className={`w-5 h-5 rounded-full border-2 flex-shrink-0 mt-0.5 z-10 ${i === etapes.length - 1 ? 'bg-blue-600 border-blue-600' : 'bg-white border-blue-300'}`} />
-                  {/* Contenu */}
+         
                   <div className="flex-1 pb-2">
                     <p className="font-semibold text-gray-900 text-sm">{e.title}</p>
                     <p className="text-xs text-gray-500 mt-1 leading-relaxed">{e.desc}</p>
@@ -190,7 +198,13 @@ export default function APropos() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
+             <p className="text-gray-600 leading-relaxed text-sm mb-4">
+                Créée en 2020 à Dakar, GalléWork Sport est née d'un constat simple : les professionnels du sport africain n'avaient pas accès aux mêmes ressources de formation que leurs homologues européens ou américains.
+              </p>
+              <p className="text-gray-600 leading-relaxed text-sm mb-6">
+                Notre plateforme propose des formations certifiantes conçues par des experts africains et internationaux, adaptées aux réalités et aux opportunités du marché sportif africain. Du management sportif à l'eSport en passant par la nutrition et le coaching, nous couvrons l'ensemble des métiers du sport moderne.
+              </p>
         </div>
       </section>
 

@@ -24,11 +24,11 @@ const mesFormations = [
 ]
 
 const sidebarLinks = [
-  { icon: '🏠', label: 'Tableau de bord', path: '/apprenant',          active: true  },
-  { icon: '📚', label: 'Mes formations',  path: '/apprenant/formations', active: false },
-  { icon: '👤', label: 'Mon profil',      path: '/apprenant/profil',     active: false },
-  { icon: '🏆', label: 'Certificats',     path: '/apprenant/certificats', active: false },
-  { icon: '⚙️', label: 'Paramètres',     path: '/apprenant/parametres', active: false },
+  {  label: 'Tableau de bord', path: '/apprenant',          active: true  },
+  {  label: 'Mes formations',  path: '/apprenant/formations', active: false },
+  { label: 'Mon profil',      path: '/apprenant/profil',     active: false },
+  {  label: 'Certificats',     path: '/apprenant/certificats', active: false },
+  { label: 'Paramètres',     path: '/apprenant/parametres', active: false },
 ]
 
 export default function ApprenantDashboard() {
@@ -82,7 +82,7 @@ export default function ApprenantDashboard() {
                 l.active ? 'bg-blue-50 text-blue-600' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
               }`}
             >
-              <span>{l.icon}</span> {l.label}
+              <span>{l.label}</span> 
             </Link>
           ))}
         </nav>
@@ -91,7 +91,7 @@ export default function ApprenantDashboard() {
         <div className="p-4 border-t border-gray-100">
           <button onClick={handleLogout}
             className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-red-500 hover:bg-red-50 transition-all">
-            🚪 Déconnexion
+            Déconnexion
           </button>
         </div>
       </aside>

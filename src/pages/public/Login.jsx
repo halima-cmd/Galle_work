@@ -29,7 +29,7 @@ export default function Login() {
     if (form.email === 'admin@gw.com' && form.password === 'admin123') {
       login({ nom: 'Admin', email: form.email, }, 'fake-jwt-admin', 'ROLE_ADMIN')
       navigate('/admin')
-    } else if (form.email === 'user@gw.com' && form.password === 'user123') {
+    } else if (form.email === 'user@gallework-sports.com' && form.password === 'user123') {
       login({ nom: 'Kara', email: form.email,  }, 'fake-jwt-user', 'ROLE_USER')
       navigate('/apprenant')
     } else {
