@@ -70,16 +70,7 @@ export default function Inscription() {
           style={{ background: 'radial-gradient(circle, #1d4ed8, transparent)' }} />
 
         <div className="relative z-10">
-          <img src={logo} alt="GalleWork" className="h-16 w-auto mb-6" />
-          <div className="text-white">
-            <span className="text-4xl font-bold">Galle </span>
-            <span className="text-4xl font-bold text-blue-400">Work</span>
-            <div className="flex items-center gap-3 mt-1">
-              <div className="h-0.5 w-8 bg-blue-400" />
-              <span className="text-blue-300 text-sm font-semibold tracking-[0.3em]">SPORTS</span>
-              <div className="h-0.5 w-8 bg-blue-400" />
-            </div>
-          </div>
+        
           <p className="text-blue-200 text-sm mt-6 leading-relaxed">
             Rejoignez plus de 5 000 professionnels du sport africain qui font confiance à GalléWork Sports pour leur développement.
           </p>
@@ -99,9 +90,6 @@ export default function Inscription() {
       <div className="flex-1 flex items-center justify-center px-6 py-12 bg-white">
         <div className="w-full max-w-md">
 
-          <div className="lg:hidden flex justify-center mb-8">
-            <img src={logo} alt="GalleWork" className="h-12 w-auto" />
-          </div>
 
           <h1 className="text-3xl font-bold text-gray-900 text-center mb-2">Créer un compte</h1>
           <p className="text-gray-500 text-sm text-center mb-6">
