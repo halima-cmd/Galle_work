@@ -6,6 +6,8 @@ import heroImage from '../../../assets/images/hero.png'
 import Formations from './formations/Formations'
 import mehdi from '../../../assets/images/mehdi.jpeg'
 import diop from '../../../assets/images/diop.jpeg'
+import Abou from '../../../assets/images/abou.jpeg'
+import Felou from '../../../assets/images/felou.jpeg'
 import Actualites from './actualites/Actualites'
 // The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
 // import './App.css'
@@ -63,19 +65,19 @@ const webinaires = [
 const formateurs = [
   {
     id: 1,
-    title: "Maître Mooti Dakhli ",
-    excerpt: "Expert en droit du Sport",
-    image: mehdi
+    title: "Abou NGAME",
+    excerpt: "Expert en Gouvernance du sport et Gestion d'événements sportifs",
+    image: Abou
   },
   {
     id: 2,
-    title: "Ibrahim Diop",
-    excerpt: "Expert en analyse vidéo Analyste vidéo de l'équipe nationale du Burkina Faso.",
-    image: diop
+    title: "Doudou félou SOW",
+    excerpt: "Expert en Ingénierie de formation & Management du Sport.",
+    image: Felou
   },
   {
     id: 3,
-    title: "Maître Mooti Dakhli",
+    title: "Maître Mooti DAKHLI",
     excerpt: "Expert en analyse vidéo Analyste vidéo de l'équipe nationale du Burkina Faso",
     image: mehdi
   },
